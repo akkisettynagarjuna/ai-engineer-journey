@@ -1,0 +1,113 @@
+===============================
+LOOPS / LISTS / DICTIONARIES
+===============================
+
+1. List
+--------------
+List stores collection of values.
+
+Example:
+numbers = [1, 2, 3]
+
+Lists are mutable.
+
+--------------------------------
+
+2. List Indexing
+--------------
+Python indexing starts from 0.
+
+Example:
+numbers[0]
+
+returns first element.
+
+--------------------------------
+
+3. append()
+--------------
+Adds new value into list.
+
+Example:
+numbers.append(4)
+
+--------------------------------
+
+4. remove()
+--------------
+Removes value from list.
+
+Example:
+numbers.remove(2)
+
+Can fail if value not present.
+
+Better:
+Check before removing.
+
+--------------------------------
+
+5. Loops
+--------------
+Loops repeat operations.
+
+Example:
+for num in numbers:
+    print(num)
+
+--------------------------------
+
+6. Accumulation Logic
+--------------
+Example:
+total = total + num
+
+Very important foundational logic.
+
+Used heavily in:
+- algorithms
+- AI computations
+- statistics
+
+--------------------------------
+
+7. Dictionary
+--------------
+Dictionary stores key-value pairs.
+
+Example:
+student = {
+    "name": "Nagarjuna",
+    "marks": 90
+}
+
+--------------------------------
+
+8. Dictionary Access
+--------------
+Example:
+student["name"]
+
+returns:
+"Nagarjuna"
+
+--------------------------------
+
+9. Dictionary Iteration
+--------------
+Example:
+for key, value in student.items()
+
+.items() returns key-value pairs.
+
+--------------------------------
+
+10. Industry Standard Practice
+--------------
+Readable code > clever code.
+
+Recommended:
+name in students
+
+Instead of:
+students.__contains__(name)

@@ -1,0 +1,53 @@
+===============================
+GIT / GITHUB NOTES
+===============================
+
+1. git init
+--------------
+Initializes Git repository.
+
+--------------------------------
+
+2. git add .
+--------------
+Stages all files.
+
+--------------------------------
+
+3. git commit
+--------------
+Creates project snapshot.
+
+Example:
+git commit -m "message"
+
+--------------------------------
+
+4. Git Commit Stores
+--------------
+- code
+- timestamp
+- author
+- commit message
+
+--------------------------------
+
+5. GitHub
+--------------
+Cloud platform for storing repositories.
+
+--------------------------------
+
+6. git push
+--------------
+Uploads local commits to GitHub.
+
+--------------------------------
+
+7. Why Git Important?
+--------------
+Used for:
+- version control
+- collaboration
+- project history
+- backup

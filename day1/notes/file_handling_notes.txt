@@ -1,0 +1,64 @@
+===============================
+FILE HANDLING NOTES
+===============================
+
+1. open()
+--------------
+Used to open file.
+
+Example:
+open("students.txt")
+
+--------------------------------
+
+2. Modes
+--------------
+"r" -> read
+"w" -> write
+"a" -> append
+
+--------------------------------
+
+3. Write Mode
+--------------
+Example:
+with open("students.txt", "w") as file:
+    file.write("Nagarjuna")
+
+Write mode replaces old content.
+
+--------------------------------
+
+4. Read Mode
+--------------
+Example:
+with open("students.txt", "r") as file:
+    data = file.read()
+
+--------------------------------
+
+5. Append Mode
+--------------
+Example:
+with open("students.txt", "a") as file:
+    file.write("\nMani")
+
+Append adds data without deleting old data.
+
+--------------------------------
+
+6. with Keyword
+--------------
+Automatically closes file.
+
+Industry standard practice.
+
+--------------------------------
+
+7. Why File Handling Important?
+--------------
+Used for:
+- logs
+- datasets
+- AI preprocessing
+- configuration files

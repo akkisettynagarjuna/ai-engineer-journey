@@ -1,0 +1,114 @@
+===============================
+PANDAS NOTES
+===============================
+
+1. Pandas
+--------------
+Pandas is used for:
+- tabular data
+- CSV files
+- filtering
+- transformations
+
+Think:
+Excel for Python.
+
+--------------------------------
+
+2. DataFrame
+--------------
+Tabular structure:
+- rows
+- columns
+
+Example:
+df = pd.DataFrame(data)
+
+--------------------------------
+
+3. Series
+--------------
+Single column structure.
+
+Example:
+df["age"]
+
+returns:
+Series
+
+--------------------------------
+
+4. DataFrame vs Series
+--------------
+Series:
+1D structure.
+
+DataFrame:
+2D table structure.
+
+--------------------------------
+
+5. Single vs Double Brackets
+--------------
+Single bracket:
+df["age"]
+
+returns Series.
+
+Double bracket:
+df[["age"]]
+
+returns DataFrame.
+
+--------------------------------
+
+6. Boolean Masking
+--------------
+Conditions create True/False Series.
+
+Example:
+df["marks"] > 80
+
+Pandas keeps rows where mask is True.
+
+--------------------------------
+
+7. Filtering
+--------------
+Example:
+df[df["salary"] > 50000]
+
+Used heavily in:
+- preprocessing
+- data cleaning
+- ML pipelines
+
+--------------------------------
+
+8. Transformations
+--------------
+Transformation means changing data into more useful form.
+
+Examples:
+- adding columns
+- modifying columns
+- renaming columns
+- type conversion
+
+--------------------------------
+
+9. CSV -> DataFrame -> Filtering -> Transformation
+--------------
+Common data engineering flow.
+
+--------------------------------
+
+10. Why Pandas Important in AI?
+--------------
+Before ML training:
+- data cleaning
+- filtering
+- preprocessing
+- transformation
+
+are heavily done using Pandas.

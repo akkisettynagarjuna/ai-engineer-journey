@@ -1,0 +1,167 @@
+# ================================
+# NUMPY IMPORTANT NOTES
+# ================================
+
+# 1. NumPy array is NOT a normal Python list.
+#    It is a special optimized structure called ndarray.
+#
+# Example:
+# arr = np.array([1, 2, 3])
+
+# ==========================================
+# 2. Vectorized Operations
+# ==========================================
+#
+# NumPy performs operations on ALL elements efficiently.
+#
+# Example:
+# arr + 10
+#
+# Internally:
+# [1, 2, 3]
+# becomes:
+# [11, 12, 13]
+#
+# This is called:
+# Vectorized Operation
+#
+# Very important in AI/ML because numerical operations
+# happen on huge datasets.
+
+# ==========================================
+# 3. Difference Between np.mean(arr)
+#    and arr.mean()
+# ==========================================
+#
+# Both are valid and produce the same result.
+#
+# Example:
+# np.mean(arr)
+# arr.mean()
+#
+# Both calculate the average of array elements.
+
+# ==========================================
+# 4. Why arr.mean Prints Strange Output?
+# ==========================================
+#
+# Example:
+# print(arr.mean)
+#
+# This does NOT execute the function.
+#
+# It only prints the method reference/object.
+#
+# Correct:
+# print(arr.mean())
+#
+# IMPORTANT:
+# Functions/methods require ()
+# to execute.
+
+# ==========================================
+# 5. Difference Between Property and Method
+# ==========================================
+#
+# PROPERTY:
+# Does not require ()
+#
+# Example:
+# arr.shape
+# arr.dtype
+# arr.size
+#
+# METHOD:
+# Requires ()
+#
+# Example:
+# arr.mean()
+# arr.max()
+# arr.min()
+
+# ==========================================
+# 6. Understanding Shape in NumPy
+# ==========================================
+
+# 1D Array
+#
+# arr = np.array([5, 10, 15, 20])
+#
+# arr.shape
+# Output:
+# (4,)
+#
+# Meaning:
+# 1 dimension containing 4 elements.
+#
+# IMPORTANT:
+# This is NOT:
+# 1 row and 4 columns.
+#
+# It is simply:
+# 1D vector.
+
+# ==========================================
+# 7. Row Matrix
+# ==========================================
+#
+# arr = np.array([[5, 10, 15, 20]])
+#
+# arr.shape
+# Output:
+# (1, 4)
+#
+# Meaning:
+# 1 row and 4 columns.
+
+# ==========================================
+# 8. Column Matrix
+# ==========================================
+#
+# arr = np.array([
+#     [5],
+#     [10],
+#     [15],
+#     [20]
+# ])
+#
+# arr.shape
+# Output:
+# (4, 1)
+#
+# Meaning:
+# 4 rows and 1 column.
+
+# ==========================================
+# 9. Recommended Style
+# ==========================================
+#
+# Recommended:
+# arr.shape
+#
+# Instead of:
+# np.shape(arr)
+#
+# Because shape is a property
+# belonging to the array object.
+
+# ==========================================
+# 10. Very Important AI Connection
+# ==========================================
+#
+# Most Machine Learning data internally
+# becomes vectors/matrices/tensors.
+#
+# NumPy is foundational for:
+# - ML
+# - Deep Learning
+# - Data Processing
+# - Numerical Computation
+#
+# Libraries like:
+# - Pandas
+# - Scikit-learn
+# - TensorFlow
+# - PyTorch
+#
+# heavily depend on NumPy internally.

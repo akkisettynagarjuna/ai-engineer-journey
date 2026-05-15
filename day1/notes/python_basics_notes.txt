@@ -1,0 +1,134 @@
+===============================
+PYTHON BASICS NOTES
+===============================
+
+1. Variables
+--------------
+Variables store data in memory.
+
+Example:
+name = "Nagarjuna"
+
+Think:
+name -> value mapping.
+
+--------------------------------
+
+2. Data Types
+--------------
+str   -> text
+int   -> whole number
+float -> decimal number
+bool  -> True/False
+
+Example:
+age = 25
+salary = 100.5
+is_engineer = True
+
+--------------------------------
+
+3. input()
+--------------
+input() always returns string.
+
+Example:
+age = input("Enter age")
+
+Even if user types:
+25
+
+Python stores:
+"25"
+
+Use type conversion when needed.
+
+--------------------------------
+
+4. Type Conversion
+--------------
+int()
+float()
+str()
+
+Example:
+age = int(input("Enter age"))
+
+--------------------------------
+
+5. f-string
+--------------
+Recommended modern formatting style.
+
+Example:
+print(f"Hello {name}")
+
+Cleaner and readable.
+
+--------------------------------
+
+6. Difference Between print() and return
+--------------
+print():
+Displays output.
+
+return:
+Sends value back for reuse.
+
+Example:
+def add(a, b):
+    return a + b
+
+--------------------------------
+
+7. Functions
+--------------
+Functions are reusable blocks of code.
+
+Benefits:
+- avoids repetition
+- improves readability
+- modular programming
+
+Example:
+def greet(name):
+    print(f"Hello {name}")
+
+--------------------------------
+
+8. Parameters
+--------------
+Parameters are placeholder variables
+inside functions.
+
+Example:
+def greet(name)
+
+'name' is parameter.
+
+--------------------------------
+
+9. Methods vs Properties
+--------------
+Method:
+Requires ()
+
+Example:
+arr.mean()
+
+Property:
+Does not require ()
+
+Example:
+arr.shape
+
+--------------------------------
+
+10. Important Learning Principle
+--------------
+Do not memorize syntax only.
+
+Focus on:
+- why concept exists
+- data flow
+- internal behavior
