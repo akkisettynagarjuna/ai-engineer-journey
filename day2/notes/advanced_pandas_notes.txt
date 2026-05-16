@@ -1,0 +1,327 @@
+===============================
+ADVANCED PANDAS NOTES
+===============================
+
+1. Missing Values
+--------------
+Missing values are very common
+in real-world datasets.
+
+Representations:
+- None
+- np.nan
+
+--------------------------------
+
+2. None
+--------------
+Comes from Python.
+
+Represents absence of value.
+
+General-purpose missing value.
+
+--------------------------------
+
+3. np.nan
+--------------
+Comes from NumPy.
+
+Means:
+Not a Number
+
+Mostly used for:
+numerical missing values.
+
+--------------------------------
+
+4. Empty String vs Missing Value
+--------------
+Empty String:
+""
+
+Means:
+value exists but empty.
+
+Missing Value:
+None / NaN
+
+Means:
+value absent.
+
+--------------------------------
+
+5. Database Comparison
+--------------
+Database missing values are usually:
+NULL
+
+NULL is different from:
+empty string.
+
+Java Example:
+String name = null
+-> missing reference
+
+String name = ""
+-> valid empty string object
+
+--------------------------------
+
+6. isnull()
+--------------
+Detects missing values.
+
+Example:
+df.isnull()
+
+Returns:
+True/False DataFrame.
+
+True  -> missing value
+False -> valid value
+
+--------------------------------
+
+7. Counting Missing Values
+--------------
+Example:
+df.isnull().sum()
+
+True behaves like 1
+False behaves like 0
+
+Result:
+count of missing values.
+
+Very important preprocessing technique.
+
+--------------------------------
+
+8. dropna()
+--------------
+Removes rows containing missing values.
+
+Example:
+df.dropna()
+
+Important:
+Dropping rows may remove valuable data.
+
+Engineers decide carefully whether:
+- dropping rows is safe
+- filling values is better
+
+--------------------------------
+
+9. fillna()
+--------------
+Replaces missing values.
+
+Example:
+df.fillna(0)
+
+Missing values replaced with:
+0
+
+This process is called:
+Imputation
+
+--------------------------------
+
+10. Statistical Imputation
+--------------
+Example:
+df["age"] = df["age"].fillna(df["age"].mean())
+
+Instead of random values,
+statistical values like:
+- mean
+- median
+
+are commonly used.
+
+Very common in ML preprocessing.
+
+--------------------------------
+
+11. Sorting
+--------------
+Example:
+df.sort_values(by="salary")
+
+Sorts rows based on column values.
+
+--------------------------------
+
+12. Ascending and Descending Sorting
+--------------
+By default, Pandas sorts in ascending order.
+
+Example:
+df.sort_values(by="salary")
+
+This is same as:
+df.sort_values(by="salary", ascending=True)
+
+Ascending means:
+small value to big value.
+
+--------------------------------
+
+13. Descending Sorting
+--------------
+To sort from big value to small value:
+
+df.sort_values(by="salary", ascending=False)
+
+Descending means:
+big value to small value.
+
+--------------------------------
+
+14. NaN During Sorting
+--------------
+Pandas keeps NaN rows at bottom
+by default during sorting,
+even during descending sorting.
+
+Example:
+df.sort_values(by="salary")
+
+or
+
+df.sort_values(by="salary", ascending=False)
+
+NaN rows still appear at bottom.
+
+--------------------------------
+
+15. na_position
+--------------
+Used to control NaN placement during sorting.
+
+Example:
+df.sort_values(by="salary", na_position="first")
+
+Now NaN rows appear at top.
+
+--------------------------------
+
+16. Aggregation
+--------------
+Aggregation means:
+summarizing data.
+
+Examples:
+mean()
+max()
+min()
+sum()
+
+Used heavily in:
+- analytics
+- dashboards
+- AI preprocessing
+
+--------------------------------
+
+17. GroupBy
+--------------
+Groups rows together based on column.
+
+Example:
+df.groupby("department")
+
+Operations can then be applied:
+- mean
+- max
+- min
+- sum
+
+--------------------------------
+
+18. GroupBy Flow
+--------------
+groupby() itself creates groups.
+
+Operations are applied later.
+
+Example:
+
+grouped = df.groupby("department")
+
+grouped["salary"].mean()
+
+Flow:
+- group rows
+- apply operation
+
+--------------------------------
+
+19. Why GroupBy Important?
+--------------
+Used heavily in:
+- business analytics
+- feature engineering
+- reporting
+- dashboards
+
+Very important real-world operation.
+
+--------------------------------
+
+20. Data Cleaning
+--------------
+Real-world datasets are often:
+- incomplete
+- inconsistent
+- messy
+
+Before ML training:
+data cleaning is extremely important.
+
+--------------------------------
+
+21. Real AI Pipeline
+--------------
+Raw Data
+   ↓
+Missing Values
+   ↓
+Cleaning
+   ↓
+Transformation
+   ↓
+Feature Engineering
+   ↓
+ML Model
+
+Data preprocessing is a huge part
+of real AI engineering.
+
+--------------------------------
+
+22. Important Engineering Thinking
+--------------
+Dropping rows blindly may remove
+valuable business data.
+
+Engineers must decide carefully:
+- drop data
+- fill data
+- transform data
+
+based on business context.
+
+--------------------------------
+
+23. Important Learning Principle
+--------------
+Do not memorize only syntax.
+
+Focus on:
+- internal behavior
+- data flow
+- preprocessing logic
+- why operations are performed
