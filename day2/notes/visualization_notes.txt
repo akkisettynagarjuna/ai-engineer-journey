@@ -1,0 +1,255 @@
+===============================
+BASIC DATA VISUALIZATION NOTES
+===============================
+
+1. Data Visualization
+--------------
+Visualization helps engineers:
+- understand patterns
+- detect anomalies
+- analyze relationships
+- debug preprocessing
+
+Very important in:
+- AI
+- Data Science
+- Analytics
+
+--------------------------------
+
+2. Matplotlib
+--------------
+Matplotlib is the most foundational
+plotting library in Python.
+
+Imported as:
+
+import matplotlib.pyplot as plt
+
+plt is industry-standard shorthand.
+
+--------------------------------
+
+3. Line Chart
+--------------
+Example:
+
+plt.plot(x, y)
+
+Used for:
+- trends
+- time series
+- performance tracking
+
+--------------------------------
+
+4. Plotting Flow
+--------------
+Typical plotting flow:
+
+Create Plot
+    ↓
+Add Labels
+    ↓
+Add Title
+    ↓
+Display Chart
+
+Example:
+
+plt.plot(x, y)
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Chart")
+plt.show()
+
+--------------------------------
+
+5. plt.show()
+--------------
+plt.show()
+
+Displays/render current figure.
+
+Usually called at end of plotting flow.
+
+After show():
+plot lifecycle is generally considered complete.
+
+--------------------------------
+
+6. Important show() Observation
+--------------
+Incorrect Flow:
+
+plt.plot(x,y)
+plt.show()
+
+plt.xlabel("X")
+plt.show()
+
+May not work properly because:
+show() can finalize/reset plotting context.
+
+Correct Approach:
+perform all modifications BEFORE show().
+
+--------------------------------
+
+7. xlabel() and ylabel()
+--------------
+Used to label axes.
+
+Example:
+
+plt.xlabel("Age")
+plt.ylabel("Salary")
+
+Makes charts more readable.
+
+--------------------------------
+
+8. title()
+--------------
+Used to add chart title.
+
+Example:
+
+plt.title("Salary Distribution")
+
+--------------------------------
+
+9. Bar Chart
+--------------
+Example:
+
+plt.bar(categories, values)
+
+Bar charts compare categories.
+
+Used heavily in:
+- dashboards
+- analytics
+- reporting
+
+--------------------------------
+
+10. Histogram
+--------------
+Example:
+
+plt.hist(values)
+
+Histogram shows:
+distribution of numerical values.
+
+Very important in:
+- preprocessing
+- outlier analysis
+- ML understanding
+
+--------------------------------
+
+11. Scatter Plot
+--------------
+Example:
+
+plt.scatter(x, y)
+
+Used to analyze:
+relationship between variables.
+
+Very important in:
+- feature analysis
+- ML preprocessing
+
+--------------------------------
+
+12. Visualization Using DataFrame
+--------------
+Example:
+
+plt.hist(df["salary"])
+
+Pandas columns can directly be used
+inside Matplotlib plotting functions.
+
+--------------------------------
+
+13. GroupBy + Visualization
+--------------
+Example:
+
+dept_wise_avg_sal =
+df.groupby("department")["salary"].mean()
+
+plt.bar(
+    dept_wise_avg_sal.index,
+    dept_wise_avg_sal.values
+)
+
+Very common analytics workflow.
+
+--------------------------------
+
+14. figure(figsize=())
+--------------
+Example:
+
+plt.figure(figsize=(8,5))
+
+Used to control chart size.
+
+--------------------------------
+
+15. Preprocessing Before Visualization
+--------------
+Before plotting:
+missing values should usually be handled.
+
+Example:
+
+df["salary"] =
+df["salary"].fillna(df["salary"].mean())
+
+Very important preprocessing step.
+
+--------------------------------
+
+16. Real AI/Data Workflow
+--------------
+Dataset
+   ↓
+Cleaning
+   ↓
+Transformation
+   ↓
+Visualization
+   ↓
+Analysis
+   ↓
+ML Model
+
+--------------------------------
+
+17. Important Engineering Thinking
+--------------
+Visualization is not only for
+beautiful charts.
+
+It helps engineers:
+- understand data
+- detect problems
+- validate assumptions
+- debug preprocessing
+
+--------------------------------
+
+18. Important Learning Principle
+--------------
+Do not memorize plotting syntax only.
+
+Focus on:
+- what chart represents
+- why visualization is useful
+- how preprocessing affects charts

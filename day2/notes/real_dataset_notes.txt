@@ -1,0 +1,284 @@
+===============================
+REAL DATASET PRACTICE NOTES
+===============================
+
+1. Real-World Datasets
+--------------
+Real-world datasets are usually:
+- messy
+- incomplete
+- inconsistent
+
+Before Machine Learning:
+data must be cleaned and processed.
+
+--------------------------------
+
+2. read_csv()
+--------------
+Used to load CSV file into DataFrame.
+
+Example:
+df = pd.read_csv("employees_realistic.csv")
+
+Very common in:
+- AI Engineering
+- Data Science
+- Analytics
+
+--------------------------------
+
+3. head()
+--------------
+Example:
+df.head()
+
+Shows first 5 rows of dataset.
+
+Used for:
+- quick inspection
+- understanding data structure
+- verifying loaded data
+
+--------------------------------
+
+4. info()
+--------------
+Example:
+df.info()
+
+Provides:
+- column names
+- data types
+- non-null counts
+- memory information
+
+Very important for real-world debugging.
+
+--------------------------------
+
+5. describe()
+--------------
+Example:
+df.describe()
+
+Provides statistical summary for
+numerical columns.
+
+Includes:
+- mean
+- min
+- max
+- count
+- standard deviation
+
+Used heavily during preprocessing.
+
+--------------------------------
+
+6. Missing Value Analysis
+--------------
+Example:
+df.isnull().sum()
+
+Flow:
+- isnull() creates True/False DataFrame
+- sum() counts True values
+
+Used to identify:
+which columns contain missing values.
+
+--------------------------------
+
+7. fillna()
+--------------
+Used to replace missing values.
+
+Example:
+df["age"] = df["age"].fillna(df["age"].mean())
+
+fillna() only replaces missing cells.
+
+--------------------------------
+
+8. Why Left Side Assignment Needed?
+--------------
+Example:
+
+df["age"] = df["age"].fillna(df["age"].mean())
+
+Right side:
+creates updated Series.
+
+Left side:
+stores updated result back into DataFrame.
+
+Without assignment,
+original column may remain unchanged.
+
+--------------------------------
+
+9. Strategic Missing Value Filling
+--------------
+Different columns may require
+different preprocessing strategies.
+
+Example:
+salary -> fill with mean
+experience -> fill with 0
+
+Reason:
+business meaning matters.
+
+--------------------------------
+
+10. Feature Engineering
+--------------
+Feature engineering means:
+creating useful new information
+from existing data.
+
+Example:
+
+df["salary_per_experience"] =
+df["salary"] / (df["experience"] + 1)
+
+Very important in:
+- Machine Learning
+- AI systems
+- recommendation systems
+
+--------------------------------
+
+11. GroupBy Analytics
+--------------
+Example:
+
+df.groupby("department")["salary"].mean()
+
+Flow:
+- group rows department-wise
+- apply operation on grouped data
+
+Used heavily in:
+- analytics
+- dashboards
+- reporting
+- feature engineering
+
+--------------------------------
+
+12. Filtering Rows
+--------------
+Example:
+
+df[df["salary"] > 60000]
+
+Condition creates:
+True/False mask.
+
+Pandas keeps:
+True rows only.
+
+--------------------------------
+
+13. Sorting Dataset
+--------------
+Example:
+
+df.sort_values(by="salary", ascending=False)
+
+ascending=False means:
+high to low sorting.
+
+Used for:
+- ranking
+- analytics
+- reporting
+
+--------------------------------
+
+14. Experience-Based Filtering
+--------------
+Example:
+
+df[df["experience"] > 5]
+
+Used for:
+- senior employee filtering
+- business segmentation
+- analytics
+
+--------------------------------
+
+15. Department-wise Aggregation
+--------------
+Example:
+
+df.groupby("department")["age"].mean()
+
+Calculates:
+average age per department.
+
+Very common analytics operation.
+
+--------------------------------
+
+16. Boolean Feature Columns
+--------------
+Example:
+
+df["senior_employee"] =
+df["experience"] > 5
+
+Creates:
+True / False column.
+
+Very common in:
+- feature engineering
+- preprocessing
+- business rules
+
+--------------------------------
+
+17. Real AI/Data Workflow
+--------------
+Raw Dataset
+    ↓
+Inspection
+    ↓
+Missing Value Analysis
+    ↓
+Cleaning
+    ↓
+Transformation
+    ↓
+Feature Engineering
+    ↓
+ML Model
+
+--------------------------------
+
+18. Important Engineering Thinking
+--------------
+Good engineers do not blindly:
+- drop data
+- fill data
+- transform data
+
+They think about:
+- business meaning
+- data quality
+- ML impact
+
+--------------------------------
+
+19. Important Learning Principle
+--------------
+Do not focus only on syntax.
+
+Focus on:
+- preprocessing logic
+- data flow
+- why operations are performed
+- engineering reasoning
