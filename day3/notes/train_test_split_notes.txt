@@ -1,0 +1,199 @@
+===============================
+TRAIN / TEST SPLIT
+===============================
+
+1. Why Train/Test Split Needed?
+--------------
+Train/Test split is used so that:
+- model can learn using training data
+- model can be evaluated using unseen data
+
+Goal:
+check whether model learned properly.
+
+--------------------------------
+
+2. Training Data
+--------------
+Training data is used for:
+- model learning
+- pattern discovery
+
+Model studies training examples
+to learn relationships/patterns.
+
+--------------------------------
+
+3. Testing Data
+--------------
+Testing data is used for:
+- evaluating model performance
+- checking prediction quality
+
+Testing data should remain unseen
+during training phase.
+
+--------------------------------
+
+4. Important ML Goal
+--------------
+Goal of ML is NOT:
+memorizing old examples.
+
+Goal is:
+predicting future unseen data correctly.
+
+--------------------------------
+
+5. Overfitting
+--------------
+Overfitting means:
+model memorizes training examples
+instead of learning general patterns.
+
+--------------------------------
+
+6. Good Model vs Overfit Model
+--------------
+Good Model:
+learns general patterns.
+
+Overfit Model:
+memorizes exact training examples.
+
+--------------------------------
+
+7. Unseen Data
+--------------
+Unseen data means:
+data that model never saw
+during training phase.
+
+--------------------------------
+
+8. test_size
+--------------
+Example:
+test_size = 0.2
+
+Means:
+20% data reserved for testing.
+80% data used for training.
+
+--------------------------------
+
+9. random_state
+--------------
+random_state controls:
+which exact rows go into
+training/testing datasets.
+
+test_size controls:
+HOW MUCH data.
+
+random_state controls:
+WHICH exact rows.
+
+--------------------------------
+
+10. train_test_split()
+--------------
+train_test_split only splits data.
+
+No ML learning happens here.
+
+Actual learning happens later using:
+model.fit(X_train, y_train)
+
+--------------------------------
+
+11. X_train and y_train
+--------------
+X_train:
+training features/input data.
+
+y_train:
+correct outputs used during learning.
+
+--------------------------------
+
+12. X_test and y_test
+--------------
+X_test:
+unseen testing input data.
+
+y_test:
+correct answers used later
+for model evaluation.
+
+--------------------------------
+
+13. Future ML Flow
+--------------
+X_train + y_train
+        ↓
+Model learns patterns
+        ↓
+X_test
+        ↓
+Model predicts outputs
+        ↓
+Predictions compared with y_test
+
+--------------------------------
+
+14. Theory Reinforcement
+--------------
+Q: Why train/test split needed?
+
+A:
+To train the model using one part of data
+and test it on unseen data.
+
+--------------------------------
+
+Q: Why testing on same training data dangerous?
+
+A:
+Because model may memorize training examples
+instead of learning general patterns.
+
+--------------------------------
+
+Q: What is overfitting?
+
+A:
+Overfitting means model memorizes training data
+too much and may fail on new unseen data.
+
+--------------------------------
+
+Q: Does train_test_split train the model?
+
+A:
+No.
+It only splits data.
+
+Model learning happens later using:
+model.fit(X_train, y_train)
+
+--------------------------------
+
+Q: Difference between test_size and random_state?
+
+A:
+test_size controls HOW MUCH data goes to testing.
+
+random_state controls WHICH exact rows go to
+training/testing.
+
+--------------------------------
+
+15. Important Learning Principle
+--------------
+Do not focus only on sklearn syntax.
+
+Focus on:
+- why splitting needed
+- why unseen data important
+- difference between learning and memorization

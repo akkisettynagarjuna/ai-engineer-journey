@@ -1,0 +1,130 @@
+===============================
+FEATURES AND LABELS
+===============================
+
+1. Features
+--------------
+Features are input variables
+given to ML models for prediction.
+
+Features provide information
+to the machine.
+
+--------------------------------
+
+2. Label
+--------------
+Label is the correct output/target
+that the ML model tries to predict.
+
+--------------------------------
+
+3. Simple Understanding
+--------------
+Features:
+information GIVEN to machine.
+
+Label:
+answer machine should PREDICT.
+
+--------------------------------
+
+4. Example
+--------------
+Employee Dataset:
+
+| Experience | Age | Salary |
+
+Features:
+- Experience
+- Age
+
+Label:
+- Salary
+
+Because:
+salary is the final value
+machine should predict.
+
+--------------------------------
+
+5. Important ML Flow
+--------------
+Features
+    ↓
+Machine learns patterns
+    ↓
+Predict Label
+
+--------------------------------
+
+6. Multiple Features
+--------------
+Features can contain
+multiple columns.
+
+Example:
+- experience
+- age
+- education
+- skills
+
+All can together help prediction.
+
+--------------------------------
+
+7. Important Understanding
+--------------
+Features should be relevant.
+
+Relevant features help:
+- better learning
+- better predictions
+- higher accuracy
+
+--------------------------------
+
+8. Irrelevant Features
+--------------
+Irrelevant features can:
+- confuse ML model
+- introduce noise
+- reduce accuracy
+- affect predictions negatively
+
+--------------------------------
+
+9. Real-World Example
+--------------
+Predict employee salary.
+
+Good Features:
+- experience
+- skills
+- education
+
+Bad Feature:
+- favorite movie
+
+because likely unrelated to salary.
+
+--------------------------------
+
+10. Important Interview Definitions
+--------------
+Feature:
+input variable used for prediction.
+
+Label:
+target output machine tries to predict.
+
+--------------------------------
+
+11. Important Learning Principle
+--------------
+Do not memorize only definitions.
+
+Understand:
+- what information is given
+- what machine predicts
+- how features help prediction

@@ -1,0 +1,182 @@
+===============================
+MACHINE LEARNING BASICS
+===============================
+
+1. Machine Learning
+--------------
+Machine Learning is a field of AI where
+machines learn patterns from data
+to make future predictions or decisions.
+
+--------------------------------
+
+2. Core Idea of Machine Learning
+--------------
+Machine Learning learns patterns
+from sample/historical data.
+
+Then uses learned patterns for:
+- future prediction
+- future decision making
+
+--------------------------------
+
+3. Types of Machine Learning
+--------------
+Mainly:
+1. Supervised Learning
+2. Unsupervised Learning
+
+--------------------------------
+
+4. Supervised Learning
+--------------
+Supervised Learning means:
+learning from solved examples.
+
+Machine receives:
+- input data
+- correct output data
+
+Then machine learns relationship/pattern
+between input and output.
+
+--------------------------------
+
+5. Why Called Supervised?
+--------------
+Because:
+correct answers already exist
+during learning phase.
+
+Like:
+teacher supervising student practice.
+
+--------------------------------
+
+6. Supervised Learning Example
+--------------
+Example:
+
+Input -> Output
+
+2 -> 4
+3 -> 9
+4 -> 16
+
+Machine learns:
+output = square(input)
+
+Then predicts outputs
+for future unseen inputs.
+
+--------------------------------
+
+7. Important Understanding
+--------------
+Machine does NOT always predict perfectly.
+
+Machine tries to:
+learn useful patterns
+as accurately as possible.
+
+Future predictions can still be wrong.
+
+--------------------------------
+
+8. Testing in Machine Learning
+--------------
+Before releasing ML systems:
+testing/evaluation is performed.
+
+Goal:
+check whether learned patterns
+work properly on unseen data.
+
+--------------------------------
+
+9. Real-World Examples of Supervised Learning
+--------------
+- salary prediction
+- house price prediction
+- spam detection
+- fraud detection
+- disease prediction
+
+--------------------------------
+
+10. Unsupervised Learning
+--------------
+Unsupervised Learning means:
+machine learns patterns
+without correct output labels.
+
+Machine itself tries to:
+- find similarities
+- create groups
+- discover hidden patterns
+
+--------------------------------
+
+11. Why Called Unsupervised?
+--------------
+Because:
+no teacher/correct answers
+exist during learning phase.
+
+Machine explores data by itself.
+
+--------------------------------
+
+12. Unsupervised Learning Example
+--------------
+Example:
+customer segmentation.
+
+Machine groups customers:
+- luxury buyers
+- budget buyers
+
+without predefined labels.
+
+--------------------------------
+
+13. Important Understanding
+--------------
+Unsupervised Learning is mainly about:
+- discovering hidden structure
+- grouping similar data
+- finding patterns
+
+NOT mainly about:
+correct/wrong answers.
+
+--------------------------------
+
+14. Real-World Examples of Unsupervised Learning
+--------------
+- customer segmentation
+- movie recommendation grouping
+- grouping similar users
+- clustering similar products
+
+--------------------------------
+
+15. Simple Memory Trick
+--------------
+Supervised Learning:
+learn from solved examples.
+
+Unsupervised Learning:
+find hidden patterns without answers.
+
+--------------------------------
+
+16. Important Learning Principle
+--------------
+Do not memorize definitions only.
+
+Focus on:
+- intuition
+- pattern understanding
+- real-world behavior
