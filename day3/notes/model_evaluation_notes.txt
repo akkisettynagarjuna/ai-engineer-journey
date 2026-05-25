@@ -1,0 +1,207 @@
+===============================
+MODEL EVALUATION
+===============================
+
+1. Why Model Evaluation Needed?
+--------------
+Model evaluation is used to check
+how well model predictions
+match actual answers.
+
+--------------------------------
+
+2. Important Understanding
+--------------
+Building model alone is NOT enough.
+
+We must measure:
+how good predictions are.
+
+--------------------------------
+
+3. Prediction vs Actual Answer
+--------------
+Model predicts outputs.
+
+These predictions are compared
+against actual correct answers.
+
+--------------------------------
+
+4. Mean Absolute Error (MAE)
+--------------
+Mean Absolute Error (MAE)
+calculates average prediction error
+between:
+- actual outputs
+- predicted outputs
+
+--------------------------------
+
+5. Simple MAE Understanding
+--------------
+MAE means:
+average prediction mistake.
+
+--------------------------------
+
+6. Smaller MAE
+--------------
+Smaller MAE means:
+model predictions are closer
+to actual answers.
+
+Usually indicates:
+better model performance.
+
+--------------------------------
+
+7. Larger MAE
+--------------
+Larger MAE means:
+predictions are farther
+from actual answers.
+
+Usually indicates:
+weaker model performance.
+
+--------------------------------
+
+8. Important Evaluation Flow
+--------------
+Prediction
+        ↓
+Compare with Actual Answers
+        ↓
+Calculate Error
+        ↓
+Measure Model Quality
+
+--------------------------------
+
+9. Why Prediction Done on Testing Data?
+--------------
+Testing data is unseen during training.
+
+Prediction on testing data helps check:
+how well model performs
+on unseen data.
+
+--------------------------------
+
+10. Important ML Goal
+--------------
+Good ML models should:
+generalize well
+on unseen data.
+
+Not simply memorize training examples.
+
+--------------------------------
+
+11. mean_absolute_error()
+--------------
+mean_absolute_error()
+compares:
+- actual outputs
+- predicted outputs
+
+Then calculates:
+average prediction error.
+
+--------------------------------
+
+12. Prediction vs Evaluation
+--------------
+Prediction:
+generating outputs
+for given input data.
+
+Evaluation:
+measuring how accurate
+those predictions are.
+
+--------------------------------
+
+13. Important ML Pipeline
+--------------
+Data
+ ↓
+Train/Test Split
+ ↓
+Create Model
+ ↓
+fit() → Learning
+ ↓
+predict() → Predictions
+ ↓
+Compare Predictions vs Actual Answers
+ ↓
+Evaluation Metrics
+
+--------------------------------
+
+14. Theory Reinforcement
+--------------
+Q: Why model evaluation needed?
+
+A:
+To check how well
+model predictions
+match actual answers.
+
+--------------------------------
+
+Q: What is Mean Absolute Error?
+
+A:
+MAE calculates average prediction error
+between actual outputs
+and predicted outputs.
+
+--------------------------------
+
+Q: Why smaller MAE better?
+
+A:
+Smaller MAE means predictions
+are closer to actual answers.
+
+--------------------------------
+
+Q: What does mean_absolute_error() compare?
+
+A:
+It compares:
+actual outputs vs predicted outputs.
+
+--------------------------------
+
+Q: Why prediction done on testing data?
+
+A:
+To check how well model performs
+on unseen data.
+
+--------------------------------
+
+Q: Difference between prediction and evaluation?
+
+A:
+Prediction:
+generating outputs.
+
+Evaluation:
+measuring prediction quality/error.
+
+--------------------------------
+
+15. Important Learning Principle
+--------------
+Do not focus only on sklearn syntax.
+
+Focus on:
+- why evaluation needed
+- prediction vs actual answer
+- good model vs weak model
+- unseen data performance

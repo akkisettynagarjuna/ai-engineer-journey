@@ -1,0 +1,183 @@
+===============================
+REGRESSION vs CLASSIFICATION
+===============================
+
+1. Regression
+--------------
+Regression means:
+machine predicts numerical/continuous values.
+
+--------------------------------
+
+2. Regression Examples
+--------------
+- salary prediction
+- house price prediction
+- temperature prediction
+- stock price prediction
+
+--------------------------------
+
+3. Continuous Values
+--------------
+Continuous values mean:
+many possible numerical outputs can exist.
+
+Examples:
+30000
+45678
+90552
+
+Not fixed categories.
+
+--------------------------------
+
+4. Classification
+--------------
+Classification means:
+machine predicts categories/classes.
+
+--------------------------------
+
+5. Classification Examples
+--------------
+- spam/not spam
+- fraud/not fraud
+- sick/healthy
+- pass/fail
+
+--------------------------------
+
+6. Categories/Classes
+--------------
+Categories/classes mean:
+predefined groups or labels.
+
+Examples:
+Yes/No
+Spam/Not Spam
+Pass/Fail
+
+--------------------------------
+
+7. Simplest Memory Trick
+--------------
+Regression:
+predict HOW MUCH.
+
+Classification:
+predict WHICH CATEGORY.
+
+--------------------------------
+
+8. Important Difference
+--------------
+Regression:
+output is numerical value.
+
+Classification:
+output is category/class.
+
+--------------------------------
+
+9. Regression Dataset Example
+--------------
+Input:
+Experience
+
+Output:
+Salary
+
+Machine predicts:
+salary amount.
+
+--------------------------------
+
+10. Classification Dataset Example
+--------------
+Input:
+Email features
+
+Output:
+Spam or Not Spam
+
+Machine predicts:
+category/class.
+
+--------------------------------
+
+11. Important Understanding
+--------------
+Regression outputs:
+continuous numerical values.
+
+Classification outputs:
+discrete categories/classes.
+
+--------------------------------
+
+12. Theory Reinforcement
+--------------
+Q: What is regression?
+
+A:
+Regression means machine predicts
+numerical/continuous values.
+
+--------------------------------
+
+Q: What is classification?
+
+A:
+Classification means machine predicts
+categories/classes.
+
+--------------------------------
+
+Q: Why salary prediction is regression?
+
+A:
+Because output is numerical value.
+
+--------------------------------
+
+Q: Why spam detection is classification?
+
+A:
+Because output belongs to categories/classes.
+
+--------------------------------
+
+Q: Difference between regression and classification?
+
+A:
+Regression predicts numerical values.
+
+Classification predicts categories/classes.
+
+--------------------------------
+
+Q: What is continuous value?
+
+A:
+Continuous values are numerical values
+where many possible outputs can exist.
+
+--------------------------------
+
+Q: What is category/class?
+
+A:
+Category/class means predefined groups
+like spam/not spam or yes/no.
+
+--------------------------------
+
+13. Important Learning Principle
+--------------
+Do not memorize only definitions.
+
+Understand:
+- what machine predicts
+- numerical vs category output
+- real-world prediction behavior
