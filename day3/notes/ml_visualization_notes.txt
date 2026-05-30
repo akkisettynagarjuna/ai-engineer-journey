@@ -1,0 +1,157 @@
+===============================
+ML VISUALIZATION
+===============================
+
+1. ML Visualization
+--------------
+ML visualization helps us see:
+- actual data points
+- learned model pattern
+- relationship between variables
+
+--------------------------------
+
+2. Scatter Plot
+--------------
+scatter() draws actual dataset points.
+
+Example:
+plt.scatter(X, y)
+
+These points represent real observations
+provided to the machine.
+
+--------------------------------
+
+3. Regression Line
+--------------
+plot() draws the learned regression line.
+
+Example:
+plt.plot(X, predicted_salary)
+
+The line represents the machine learned
+relationship between input and output.
+
+--------------------------------
+
+4. Actual Data vs Learned Pattern
+--------------
+Scatter points:
+actual dataset values.
+
+Regression line:
+model's learned pattern.
+
+--------------------------------
+
+5. Best Fitting Line
+--------------
+Best fitting line means:
+the straight line that stays closest
+to all dataset points overall.
+
+--------------------------------
+
+6. Important Understanding
+--------------
+Linear Regression does not try to
+pass through every point exactly.
+
+It tries to find the best overall
+straight-line trend.
+
+--------------------------------
+
+7. When Linear Regression Works Well
+--------------
+Linear Regression works well when
+data roughly follows a straight-line trend.
+
+--------------------------------
+
+8. When Linear Regression Struggles
+--------------
+If points are randomly scattered
+without clear linear pattern,
+Linear Regression may not work well.
+
+--------------------------------
+
+9. model.predict(X)
+--------------
+model.predict(X) generates predicted outputs
+for the given input features.
+
+Here predictions are used to draw
+the regression line.
+
+--------------------------------
+
+10. Visualization Usefulness
+--------------
+Visualization helps us understand:
+- data pattern
+- model behavior
+- relationship between variables
+- whether linear trend exists
+
+--------------------------------
+
+11. Theory Reinforcement
+--------------
+Q: What do scatter points represent?
+
+A:
+Scatter points represent actual dataset values.
+
+--------------------------------
+
+Q: What does regression line represent?
+
+A:
+Regression line represents the machine learned
+relationship between input and output.
+
+--------------------------------
+
+Q: Why line called best fitting line?
+
+A:
+Because it is the straight line that stays
+closest to all dataset points overall.
+
+--------------------------------
+
+Q: Why Linear Regression called linear?
+
+A:
+Because it learns a straight-line relationship
+between variables.
+
+--------------------------------
+
+Q: What does model.predict(X) generate here?
+
+A:
+It generates predicted outputs used to draw
+the regression line.
+
+--------------------------------
+
+Q: Why visualization useful in ML?
+
+A:
+It helps us see actual data, learned pattern,
+trend, and model behavior visually.
+
+--------------------------------
+
+12. Important Learning Principle
+--------------
+Do not only look at graph output.
+
+Understand:
+- what points mean
+- what line means
+- whether pattern is actually linear
