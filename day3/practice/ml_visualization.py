@@ -90,3 +90,4 @@ plt.show()
 # Answer in your own words.
 
 # To be frank I can't tell here it works well or not, but I would say Linear regression tries to draw the straight line that covers max dataset points.
+# (Check notes file for correct answer/explanation.)

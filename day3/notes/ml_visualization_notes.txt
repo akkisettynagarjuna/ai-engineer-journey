@@ -16,6 +16,7 @@ ML visualization helps us see:
 scatter() draws actual dataset points.
 
 Example:
+
 plt.scatter(X, y)
 
 These points represent real observations
@@ -28,6 +29,7 @@ provided to the machine.
 plot() draws the learned regression line.
 
 Example:
+
 plt.plot(X, predicted_salary)
 
 The line represents the machine learned
@@ -37,11 +39,11 @@ relationship between input and output.
 
 4. Actual Data vs Learned Pattern
 --------------
-Scatter points:
+Scatter Points:
 actual dataset values.
 
-Regression line:
-model's learned pattern.
+Regression Line:
+machine learned pattern/relationship.
 
 --------------------------------
 
@@ -98,7 +100,17 @@ Visualization helps us understand:
 
 --------------------------------
 
-11. Theory Reinforcement
+11. Important Learning Principle
+--------------
+Scatter Points:
+Actual Data
+
+Regression Line:
+Machine Learned Pattern
+
+--------------------------------
+
+12. Theory Reinforcement
 --------------
 Q: What do scatter points represent?
 
@@ -118,8 +130,8 @@ relationship between input and output.
 Q: Why line called best fitting line?
 
 A:
-Because it is the straight line that stays
-closest to all dataset points overall.
+Best fitting line means the straight line
+that stays closest to all dataset points overall.
 
 --------------------------------
 
@@ -134,22 +146,48 @@ between variables.
 Q: What does model.predict(X) generate here?
 
 A:
-It generates predicted outputs used to draw
-the regression line.
+It generates predicted outputs
+using learned patterns.
 
 --------------------------------
 
 Q: Why visualization useful in ML?
 
 A:
-It helps us see actual data, learned pattern,
-trend, and model behavior visually.
+Visualization helps us understand:
+- data patterns
+- trends
+- relationships
+- model behavior visually.
 
 --------------------------------
 
-12. Important Learning Principle
+Q: Suppose graph looks like:
+
+*
+        *
+  *
+              *
+      *
+
+Will Linear Regression work well here?
+Why or why not?
+
+A:
+Usually No.
+
+Linear Regression works best when
+data roughly follows a straight-line trend.
+
+If points are randomly scattered,
+there may not be a clear linear relationship
+for the model to learn.
+
+--------------------------------
+
+13. Important Learning Principle
 --------------
-Do not only look at graph output.
+Do not focus only on graph output.
 
 Understand:
 - what points mean
