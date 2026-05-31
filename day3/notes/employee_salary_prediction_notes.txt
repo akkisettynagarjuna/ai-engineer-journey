@@ -1,0 +1,208 @@
+===============================
+EMPLOYEE SALARY PREDICTION
+===============================
+
+1. Project Goal
+--------------
+Predict employee salary using:
+- experience
+- age
+
+--------------------------------
+
+2. Features
+--------------
+Features are input variables.
+
+In this project:
+- experience
+- age
+
+These are given to the model
+for prediction.
+
+--------------------------------
+
+3. Label
+--------------
+Label is the target output
+the model tries to predict.
+
+In this project:
+- salary
+
+--------------------------------
+
+4. Train/Test Split
+--------------
+Dataset is split into:
+- training data
+- testing data
+
+Training data:
+used for model learning.
+
+Testing data:
+used for model evaluation.
+
+--------------------------------
+
+5. LinearRegression Model
+--------------
+LinearRegression learns
+straight-line relationship
+between features and label.
+
+--------------------------------
+
+6. fit()
+--------------
+fit() trains the model.
+
+Example:
+model.fit(X_train, y_train)
+
+Model learns relationship between:
+experience, age → salary
+
+--------------------------------
+
+7. predict()
+--------------
+predict() uses learned patterns
+to generate predictions.
+
+Example:
+model.predict(X_test)
+
+--------------------------------
+
+8. Model Evaluation
+--------------
+MAE is used to compare:
+actual salary vs predicted salary.
+
+Smaller MAE means:
+better prediction quality.
+
+--------------------------------
+
+9. Floating Point Precision
+--------------
+Sometimes MAE may show tiny value like:
+
+1.4551915228366852e-11
+
+This is practically 0.
+
+It happens due to floating-point
+precision behavior in computers.
+
+--------------------------------
+
+10. Correct MAE Usage
+--------------
+Standard order:
+
+mean_absolute_error(actual_values, predicted_values)
+
+Example:
+mean_absolute_error(y_test, predictions)
+
+--------------------------------
+
+11. Future Prediction
+--------------
+Model can predict salary
+for new employee data.
+
+Example:
+experience = 10
+age = 40
+
+Predicted salary:
+120000
+
+--------------------------------
+
+12. End-to-End ML Flow
+--------------
+Data
+ ↓
+DataFrame
+ ↓
+Features / Label
+ ↓
+Train/Test Split
+ ↓
+Create Model
+ ↓
+fit() → Training
+ ↓
+predict() → Prediction
+ ↓
+MAE → Evaluation
+ ↓
+Future Prediction
+
+--------------------------------
+
+13. Theory Reinforcement
+--------------
+Q: Why experience and age are features?
+
+A:
+Because they are input variables
+given to the model for prediction.
+
+--------------------------------
+
+Q: Why salary is label?
+
+A:
+Because salary is the target output
+the model tries to predict.
+
+--------------------------------
+
+Q: What does fit() do?
+
+A:
+fit() trains the model by learning
+patterns from training data.
+
+--------------------------------
+
+Q: What does predict() do?
+
+A:
+predict() generates output using
+the learned model.
+
+--------------------------------
+
+Q: Why calculate MAE?
+
+A:
+To measure average prediction error
+between actual and predicted values.
+
+--------------------------------
+
+Q: Why MAE showed tiny value instead of 0?
+
+A:
+Due to floating-point precision.
+The value is practically 0.
+
+--------------------------------
+
+14. Important Learning Principle
+--------------
+Do not focus only on output.
+
+Understand:
+- what data goes into model
+- when learning happens
+- when prediction happens
+- how evaluation happens
