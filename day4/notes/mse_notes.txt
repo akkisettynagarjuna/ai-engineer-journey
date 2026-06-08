@@ -1,0 +1,190 @@
+===============================
+MEAN SQUARED ERROR (MSE)
+===============================
+
+1. What is MSE?
+--------------
+MSE stands for:
+
+Mean Squared Error
+
+MSE is an evaluation metric used
+to measure model quality.
+
+--------------------------------
+
+2. Purpose of MSE
+--------------
+MSE measures how far
+predictions are from
+actual values.
+
+--------------------------------
+
+3. How MSE Works
+--------------
+Step 1:
+Calculate prediction errors.
+
+Step 2:
+Square each error.
+
+Step 3:
+Calculate average of squared errors.
+
+--------------------------------
+
+4. Why Square Errors?
+--------------
+Squaring errors makes
+large mistakes much more significant.
+
+Large prediction errors
+receive heavier penalties.
+
+--------------------------------
+
+5. Important Understanding
+--------------
+MSE does not treat all
+errors equally.
+
+Bigger errors contribute
+much more to the final score.
+
+--------------------------------
+
+6. Example
+--------------
+Errors:
+
+10
+10
+100
+
+MAE:
+
+(10 + 10 + 100) / 3
+= 40
+
+MSE:
+
+(10² + 10² + 100²) / 3
+
+= (100 + 100 + 10000) / 3
+
+= 3400
+
+--------------------------------
+
+7. MAE vs MSE
+--------------
+MAE:
+Average prediction error.
+
+MSE:
+Average squared prediction error.
+
+--------------------------------
+
+8. Difference Between MAE and MSE
+--------------
+MAE treats errors linearly.
+
+MSE penalizes large errors
+more heavily.
+
+--------------------------------
+
+9. When MSE Is Useful
+--------------
+MSE is useful when
+large prediction mistakes
+are considered costly.
+
+--------------------------------
+
+10. Important Observation
+--------------
+A model may have:
+
+Small MAE
+
+but
+
+Large MSE
+
+if a few predictions
+contain very large errors.
+
+--------------------------------
+
+11. Theory Reinforcement
+--------------
+Q: What is MSE?
+
+A:
+MSE is an evaluation metric
+that measures average squared error.
+
+--------------------------------
+
+Q: Why do we square errors?
+
+A:
+To penalize large mistakes
+more heavily.
+
+--------------------------------
+
+Q: Difference between MAE and MSE?
+
+A:
+MAE averages errors.
+
+MSE squares errors first
+and then averages them.
+
+--------------------------------
+
+Q: Which metric punishes
+large mistakes more?
+
+A:
+MSE.
+
+--------------------------------
+
+12. Practical Reinforcement
+--------------
+Q: What happened after changing:
+
+70000 → 100000
+
+and evaluating again?
+
+A:
+Prediction error increased.
+
+As a result:
+
+MSE increased significantly.
+
+--------------------------------
+
+Q: Why did MSE react strongly?
+
+A:
+Because squared errors
+grow rapidly for large mistakes.
+
+--------------------------------
+
+13. Important Learning Principle
+--------------
+MAE gives average error.
+
+MSE gives average squared error.
+
+MSE focuses more on
+large prediction mistakes.

@@ -1,0 +1,210 @@
+===============================
+ROOT MEAN SQUARED ERROR (RMSE)
+===============================
+
+1. What is RMSE?
+--------------
+RMSE stands for:
+
+Root Mean Squared Error
+
+RMSE is an evaluation metric
+built from MSE.
+
+--------------------------------
+
+2. RMSE Formula Understanding
+--------------
+RMSE means:
+
+Square root of MSE
+
+RMSE = √MSE
+
+--------------------------------
+
+3. Purpose of RMSE
+--------------
+RMSE brings squared error
+back to the original unit
+of the target variable.
+
+--------------------------------
+
+4. Salary Example
+--------------
+If target is salary,
+RMSE is also interpreted
+in salary units.
+
+Example:
+
+RMSE = 2000
+
+means model error is roughly
+₹2000.
+
+--------------------------------
+
+5. Why RMSE Needed?
+--------------
+MSE values can become very large
+because errors are squared.
+
+RMSE makes the value easier
+to interpret.
+
+--------------------------------
+
+6. MSE vs RMSE
+--------------
+MSE:
+average squared error.
+
+RMSE:
+square root of MSE.
+
+--------------------------------
+
+7. MAE vs RMSE
+--------------
+MAE:
+simple average prediction error.
+
+RMSE:
+also shows prediction error
+but gives more importance
+to large mistakes.
+
+--------------------------------
+
+8. Important Understanding
+--------------
+RMSE does NOT bring MSE
+back to MAE.
+
+RMSE brings squared error
+back to original target unit.
+
+--------------------------------
+
+9. Business Interpretation
+--------------
+RMSE is easier than MSE
+for business users.
+
+Example:
+
+MSE = 4000000
+is hard to explain.
+
+RMSE = 2000
+is easier to understand.
+
+--------------------------------
+
+10. When RMSE Is Useful?
+--------------
+RMSE is useful when:
+large prediction mistakes
+should matter more.
+
+--------------------------------
+
+11. Theory Reinforcement
+--------------
+Q: What is RMSE?
+
+A:
+RMSE means Root Mean Squared Error.
+
+It is the square root of MSE.
+
+--------------------------------
+
+Q: Why do we calculate square root of MSE?
+
+A:
+To bring squared error back
+to the original unit and make
+interpretation easier.
+
+--------------------------------
+
+Q: Difference between MSE and RMSE?
+
+A:
+MSE:
+average squared error.
+
+RMSE:
+square root of MSE.
+
+--------------------------------
+
+Q: Which metric is easier to interpret
+for business users?
+
+A:
+RMSE is easier than MSE
+because it is in the original unit.
+
+--------------------------------
+
+Q: Is RMSE same as MAE?
+
+A:
+No.
+
+MAE is average absolute error.
+
+RMSE is square root of
+average squared error.
+
+--------------------------------
+
+12. Practical Reinforcement
+--------------
+Q: What happened after changing:
+
+70000 → 100000
+
+and retraining model?
+
+A:
+Prediction errors changed.
+
+MSE and RMSE also changed.
+
+--------------------------------
+
+Q: Why does RMSE change when
+large prediction errors exist?
+
+A:
+Because RMSE is based on MSE,
+and MSE gives more weight
+to large errors.
+
+--------------------------------
+
+Q: Why print MAE, MSE and RMSE together?
+
+A:
+To compare different ways
+of measuring prediction error.
+
+--------------------------------
+
+13. Important Learning Principle
+--------------
+MAE:
+easy average mistake.
+
+MSE:
+punishes large mistakes heavily.
+
+RMSE:
+punishes large mistakes
+and is easier to interpret
+than MSE.

@@ -1,0 +1,205 @@
+===============================
+MAE vs MSE vs RMSE
+===============================
+
+1. Why Compare Metrics?
+--------------
+Different evaluation metrics
+measure prediction errors
+in different ways.
+
+Each metric provides
+a different perspective
+about model performance.
+
+--------------------------------
+
+2. Mean Absolute Error (MAE)
+--------------
+MAE stands for:
+
+Mean Absolute Error
+
+MAE calculates the average
+absolute prediction error.
+
+Easy to understand.
+
+--------------------------------
+
+3. Mean Squared Error (MSE)
+--------------
+MSE stands for:
+
+Mean Squared Error
+
+MSE squares every prediction error
+before calculating the average.
+
+Large mistakes receive
+much heavier penalties.
+
+--------------------------------
+
+4. Root Mean Squared Error (RMSE)
+--------------
+RMSE stands for:
+
+Root Mean Squared Error
+
+RMSE is the square root of MSE.
+
+It brings the error back
+to the original target unit.
+
+--------------------------------
+
+5. MAE vs MSE
+--------------
+MAE:
+Treats all errors equally.
+
+MSE:
+Penalizes large errors
+much more heavily.
+
+--------------------------------
+
+6. MSE vs RMSE
+--------------
+MSE:
+Average squared error.
+
+RMSE:
+Square root of MSE.
+
+RMSE is easier to interpret
+because it is in the original unit.
+
+--------------------------------
+
+7. MAE vs RMSE
+--------------
+MAE:
+Easy to explain.
+
+RMSE:
+Highlights large mistakes
+while remaining easy to interpret.
+
+--------------------------------
+
+8. Which Metric Should We Use?
+--------------
+There is no single best metric.
+
+Choose based on
+business requirements.
+
+If average error matters:
+MAE is useful.
+
+If very large mistakes
+must be penalized:
+MSE or RMSE is preferred.
+
+--------------------------------
+
+9. Important Observation
+--------------
+Changing one prediction
+from:
+
+70000
+
+to
+
+300000
+
+caused MSE to increase
+much more than MAE.
+
+Reason:
+MSE squares large errors.
+
+--------------------------------
+
+10. Theory Reinforcement
+--------------
+Q: What does MAE measure?
+
+A:
+Average absolute prediction error.
+
+--------------------------------
+
+Q: What does MSE measure?
+
+A:
+Average squared prediction error.
+
+--------------------------------
+
+Q: Why does MSE punish
+large mistakes more?
+
+A:
+Because squaring makes
+large errors grow much faster
+than small errors.
+
+--------------------------------
+
+Q: What is RMSE?
+
+A:
+RMSE is the square root of MSE.
+It expresses the prediction error
+in the original target unit.
+
+--------------------------------
+
+Q: Which metric is easiest
+to explain to business users?
+
+A:
+Usually MAE because it directly
+represents the average prediction error.
+
+RMSE is also commonly used
+when large mistakes are important.
+
+--------------------------------
+
+11. Practical Reinforcement
+--------------
+Q: Which metric increased
+the most after changing
+70000 to 300000?
+
+A:
+MSE.
+
+Because squaring makes
+large errors much larger.
+
+--------------------------------
+
+Q: Why compare MAE,
+MSE and RMSE together?
+
+A:
+To understand different ways
+of measuring prediction quality.
+
+--------------------------------
+
+12. Important Learning Principle
+--------------
+Do not memorize evaluation metrics.
+
+Understand:
+- what each metric measures
+- when each metric is useful
+- why different metrics
+may lead to different conclusions.
