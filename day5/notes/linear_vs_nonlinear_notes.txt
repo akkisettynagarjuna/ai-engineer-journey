@@ -1,0 +1,230 @@
+===============================
+LINEAR vs NON-LINEAR RELATIONSHIP
+===============================
+
+1. Linear Relationship
+--------------
+A linear relationship is one where
+the feature and label follow
+an approximately straight-line trend.
+
+--------------------------------
+
+2. Example of Linear Relationship
+--------------
+Experience    Salary
+
+1             30000
+2             40000
+3             50000
+4             60000
+5             70000
+
+Notice:
+
+As experience increases,
+salary also increases
+in a nearly straight-line pattern.
+
+--------------------------------
+
+3. Non-Linear Relationship
+--------------
+A non-linear relationship is one where
+the feature and label do NOT follow
+a straight-line trend.
+
+--------------------------------
+
+4. Example of Non-Linear Relationship
+--------------
+Experience    Salary
+
+1             30000
+2             45000
+3             90000
+4             85000
+5             120000
+6             50000
+
+Notice:
+
+The values increase
+and decrease irregularly.
+
+--------------------------------
+
+5. Why Linear Regression Works Better
+--------------
+Linear Regression tries to learn
+one best fitting straight line.
+
+If the data already follows
+a straight-line trend,
+the learned line closely matches
+the actual data.
+
+As a result,
+predictions become more accurate.
+
+--------------------------------
+
+6. Can Linear Regression Handle
+Non-Linear Data?
+--------------
+Yes.
+
+If the data is only slightly irregular,
+Linear Regression can still
+produce reasonably good predictions.
+
+Whether the prediction quality
+is acceptable depends on
+business requirements.
+
+--------------------------------
+
+7. Visualization Understanding
+--------------
+Scatter Plot:
+Shows actual data points.
+
+Regression Line:
+Shows the pattern learned
+by the machine.
+
+--------------------------------
+
+8. Linear Dataset Observation
+--------------
+The scatter points
+are very close to
+the regression line.
+
+This indicates
+a strong linear relationship.
+
+--------------------------------
+
+9. Non-Linear Dataset Observation
+--------------
+The scatter points
+are scattered away
+from the regression line.
+
+One straight line
+cannot perfectly represent
+the relationship.
+
+--------------------------------
+
+10. Important Understanding
+--------------
+Linear Regression is NOT designed
+to fit every data point.
+
+It is designed to learn
+the overall straight-line trend.
+
+--------------------------------
+
+11. Real-World Example
+--------------
+Suppose salary generally increases
+with experience.
+
+Different companies,
+skills, negotiations,
+and locations introduce
+small variations.
+
+Linear Regression learns
+the overall trend
+instead of memorizing
+every employee's salary.
+
+--------------------------------
+
+12. Theory Reinforcement
+--------------
+Q: What is a linear relationship?
+
+A:
+A relationship where
+the feature and label
+follow an approximately
+straight-line trend.
+
+--------------------------------
+
+Q: Does Linear Regression require
+perfectly straight data?
+
+A:
+No.
+
+It can work with
+slightly irregular data,
+although prediction accuracy
+may decrease.
+
+--------------------------------
+
+Q: Why does Linear Regression
+perform better on linear data?
+
+A:
+Because the learned
+best fitting line
+closely matches
+the actual data trend.
+
+--------------------------------
+
+Q: Can Linear Regression
+be used on slightly
+irregular data?
+
+A:
+Yes.
+
+Whether it is suitable
+depends on the business
+requirements and
+prediction quality.
+
+--------------------------------
+
+13. Practical Reinforcement
+--------------
+Q: What did you observe
+in the linear dataset?
+
+A:
+The scatter points
+were close to
+the regression line.
+
+--------------------------------
+
+Q: What did you observe
+in the non-linear dataset?
+
+A:
+The scatter points
+were scattered and
+the regression line
+could not follow
+all the points.
+
+--------------------------------
+
+14. Important Learning Principle
+--------------
+Every Machine Learning algorithm
+has strengths and limitations.
+
+Linear Regression performs best
+when the relationship between
+features and labels
+is approximately linear.
