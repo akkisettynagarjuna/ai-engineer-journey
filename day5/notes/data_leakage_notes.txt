@@ -1,0 +1,255 @@
+===============================
+DATA LEAKAGE
+===============================
+
+1. What is Data Leakage?
+--------------
+Data Leakage happens when
+the model is trained using
+information that would NOT
+be available during
+real-world prediction.
+
+As a result,
+the model learns
+unrealistic patterns.
+
+--------------------------------
+
+2. Why Data Leakage Happens
+--------------
+The model always tries
+to learn the easiest
+and strongest pattern.
+
+If a feature gives
+a direct clue about
+the label,
+the model will
+prefer that feature.
+
+--------------------------------
+
+3. Salary Prediction Example
+--------------
+Goal:
+
+Predict Salary
+
+Correct Features:
+
+- Experience
+- Age
+- Education
+
+Wrong Feature:
+
+- Salary After Increment
+
+Reason:
+
+Salary After Increment
+contains information
+closely related to
+the target variable.
+
+--------------------------------
+
+4. What Happens During Training?
+--------------
+The model learns:
+
+Salary After Increment
+        ↓
+Current Salary
+
+instead of learning:
+
+Experience
+Education
+Age
+        ↓
+Salary
+
+Training accuracy
+becomes very high.
+
+--------------------------------
+
+5. What Happens During
+Real Prediction?
+--------------
+A new employee joins.
+
+Available information:
+
+- Experience
+- Age
+- Education
+
+Unavailable information:
+
+- Salary After Increment
+
+The model expects
+a feature that
+does not exist.
+
+As a result,
+prediction quality
+decreases.
+
+--------------------------------
+
+6. Why Is It Called
+Data Leakage?
+--------------
+Information that should
+NOT be available during
+prediction accidentally
+"leaks" into training.
+
+This gives the model
+an unfair advantage.
+
+--------------------------------
+
+7. Another Example
+--------------
+Goal:
+
+Predict PASS / FAIL
+
+Correct Features:
+
+- Attendance
+- Study Hours
+- Internal Marks
+
+Wrong Feature:
+
+- Final Exam Marks
+
+Reason:
+
+Final Exam Marks
+already reveal
+the final outcome.
+
+This is Data Leakage.
+
+--------------------------------
+
+8. House Price Example
+--------------
+Goal:
+
+Predict House Price
+
+Correct Features:
+
+- House Size
+- Number of Bedrooms
+- Location
+
+Wrong Feature:
+
+- Final Selling Price
+
+Reason:
+
+Final Selling Price
+already contains
+information about
+the target value.
+
+--------------------------------
+
+9. Important Understanding
+--------------
+A Machine Learning model
+can only learn
+from the features
+provided to it.
+
+If wrong features
+are given,
+the model learns
+wrong or unrealistic
+patterns.
+
+--------------------------------
+
+10. Data Leakage Effects
+--------------
+May cause:
+
+- Very high training accuracy
+- Poor production performance
+- Unrealistic predictions
+- Unreliable model
+
+--------------------------------
+
+11. Theory Reinforcement
+--------------
+Q: What is Data Leakage?
+
+A:
+Data Leakage happens when
+the model learns from
+information that will
+not be available during
+real-world prediction.
+
+--------------------------------
+
+Q: Why is Data Leakage bad?
+
+A:
+Because the model learns
+unrealistic patterns
+and performs poorly
+after deployment.
+
+--------------------------------
+
+Q: Why should we not use
+Salary After Increment
+to predict Salary?
+
+A:
+Because Salary After Increment
+contains future information
+that is unavailable
+when making predictions.
+
+--------------------------------
+
+Q: Why should we not use
+Final Exam Marks
+to predict PASS / FAIL?
+
+A:
+Because Final Exam Marks
+already reveal
+the final outcome.
+
+Using them would
+give the model
+an unfair clue.
+
+--------------------------------
+
+12. Important Learning Principle
+--------------
+A model should learn
+only from information
+that will actually
+be available
+at prediction time.
+
+Never train a model
+using features that
+directly or indirectly
+reveal the answer.

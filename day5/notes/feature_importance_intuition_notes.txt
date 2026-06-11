@@ -1,0 +1,235 @@
+===============================
+FEATURE IMPORTANCE INTUITION
+===============================
+
+1. What is Feature Importance?
+--------------
+Feature Importance tells us
+how much each input feature
+contributes to the model's prediction.
+
+--------------------------------
+
+2. Why Feature Importance Matters
+--------------
+Not every feature contributes
+equally to a prediction.
+
+Some features have:
+- High importance
+- Medium importance
+- Low importance
+
+--------------------------------
+
+3. Example
+--------------
+Employee Salary Prediction
+
+Features:
+- Experience
+- Age
+- Education
+
+Label:
+- Salary
+
+Possible importance:
+
+Experience → High
+
+Education → Medium
+
+Age → Low
+
+Note:
+Importance always depends
+on the business problem.
+
+--------------------------------
+
+4. Business Dependency
+--------------
+The same feature can have
+different importance
+in different businesses.
+
+Example:
+
+Software Company
+
+Experience → High
+
+Education → Medium
+
+Age → Low
+
+Government Recruitment
+
+Age may become
+a highly important feature
+because of eligibility rules.
+
+--------------------------------
+
+5. Relevant Features
+--------------
+Relevant features are
+the features that help
+the model make better predictions.
+
+Example:
+
+Experience
+
+Education
+
+Skills
+
+--------------------------------
+
+6. Irrelevant Features
+--------------
+Irrelevant features do not
+have a meaningful relationship
+with the prediction.
+
+Example:
+
+Favorite Color
+
+--------------------------------
+
+7. Can Irrelevant Features Affect
+Model Performance?
+--------------
+Yes.
+
+Irrelevant features may:
+
+- introduce noise
+- confuse the learning process
+- reduce prediction quality
+- increase training time
+
+--------------------------------
+
+8. More Features ≠ Better Model
+--------------
+Adding more features
+does NOT always improve
+model performance.
+
+Better features
+are more important
+than more features.
+
+--------------------------------
+
+9. Business Examples
+--------------
+Feature: City
+
+May influence salary because
+different cities have
+different salary standards.
+
+Therefore:
+
+City is business dependent.
+
+--------------------------------
+
+Feature: Favorite Color
+
+Normally has no logical
+relationship with salary.
+
+Therefore:
+
+It is usually an
+irrelevant feature.
+
+--------------------------------
+
+10. Theory Reinforcement
+--------------
+Q: What is Feature Importance?
+
+A:
+Feature Importance tells us
+how much each feature
+contributes to the model's prediction.
+
+--------------------------------
+
+Q: Do all features contribute equally?
+
+A:
+No.
+
+Different features contribute
+differently depending on
+the business problem.
+
+--------------------------------
+
+Q: Why is choosing the right
+features important?
+
+A:
+Because relevant features help
+the model make better
+and more accurate predictions.
+
+--------------------------------
+
+Q: Can irrelevant features
+reduce model performance?
+
+A:
+Yes.
+
+They may introduce noise
+and confuse the model,
+which can reduce
+prediction quality.
+
+--------------------------------
+
+11. Practical Reinforcement
+--------------
+Q: Is City always
+an irrelevant feature?
+
+A:
+No.
+
+Its importance depends
+on the business problem.
+
+--------------------------------
+
+Q: Is Favorite Color
+useful for salary prediction?
+
+A:
+No.
+
+It usually has no logical
+relationship with salary.
+
+--------------------------------
+
+12. Important Learning Principle
+--------------
+Think like an ML Engineer.
+
+Do not ask:
+
+"How many features do I have?"
+
+Instead ask:
+
+"Which features actually help
+the model learn meaningful patterns?"
